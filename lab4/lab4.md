@@ -150,6 +150,9 @@ Make a diagram & fill out a diagram!
 
 ### Diagram
 
+<img src="./lab4.svg" alt="description" />
+
+
 ### IP Table
 
 | Name                | Interface | IP/Mask           | Gateway        |
