@@ -24,14 +24,12 @@ IP Grid
 |**WAN** |
 |VyOS-1 | eth0 | 132.235.205.3/25
 |Gateway | br-PublicNet | 132.235.205.126
-||
 |Total IP Allocation        ||192.168.4.0/22
-||
 |**LAN1 Network**||192.168.4.0/24
 |DHCP Pool Start|           |
 |DHCP Pool Stop|            |
 |VyOS-1 (LAN1 Gateway)|eth7 |
-||
+|VPCS | eth0 | 192.168.4.1/24
 |**LAN2** (Future Growth)   ||192.168.5.0/24
 
 ## Task 2
@@ -66,21 +64,21 @@ Set Up VyOS for LAN1 AKA VPCS
 
 ```bash
 config
-set interfaces ethernet eth7 address 192.168.4.1/24
+set interfaces ethernet eth7 address 192.168.4.254/24
 commit
 ```
 
 ### VPCS
 
 ```bash
-ip 192.168.4.10/24 192.168.4.1
+ip 192.168.4.1/24 192.168.4.254
 show ip 
 ping 8.8.8.8 
 ```
 
 ### Windows
 
-Network settings --> IP: 192.168.4.20/24 or 255.255.255.0 WTF windows does
+Network settings --> IP: 192.168.4.x/24 or 255.255.255.0 WTF windows does
 
 ## Task 3
 
