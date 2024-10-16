@@ -4,7 +4,7 @@ NAT & NMAP LAB
 
 ## My Network
 
-![Uhm Whatttt](image.png)
+![My Subnet](image.png)
 
 ## IP Grid - Task 1
 
@@ -29,6 +29,8 @@ NAT & NMAP LAB
 |VyOS-2 (LAN2 Gateway) |eth7|172.19.1.254|
 
 ## Task 2  - Recipe
+
+VyOS
 
 ```bash
 config
@@ -58,3 +60,31 @@ set service dhcp-server shared-network-name LAN2_POOL subnet 172.19.0.0/23 name-
 set service dhcp-server shared-network-name LAN2_POOL subnet 172.19.0.0/23 name-server 132.235.200.41
 commit
 ```
+
+To get DHCP confirmation
+VPCS's
+
+```bash
+dhcp
+show ip
+```
+
+VyOS
+
+```bash
+exit
+show dhcp server leases
+show dhcp server statistics
+```
+
+Results:
+---
+
+![VyOS](image-1.png)
+![VPCS-Lan1](image-2.png)
+![VPCS-Lan2](image-3.png)
+
+END OF PRE LAB
+===
+
+## Task 3
