@@ -1,4 +1,4 @@
-# Lab 6
+# Lab 6 - Izaak Wolfgang White
 
 NAT & NMAP LAB
 
@@ -21,12 +21,12 @@ NAT & NMAP LAB
 |**LAN1 Network**|               |                  |
 |DHCP Pool Start |               |172.19.2.10       |
 |DHCP Pool Stop        |         |172.19.2.160      |
-|VyOS-1 (LAN1 Gateway) |eth6     |172.19.2.254      |
+|VyOS-1 (LAN1 Gateway) |eth6 - e0     |172.19.2.254      |
 ||||
 |**LAN2 Network**      |||
 |DHCP Pool Start       ||172.19.0.10|
 |DHCP Pool Stop        ||172.19.1.55|
-|VyOS-2 (LAN2 Gateway) |eth7|172.19.1.254|
+|VyOS-2 (LAN2 Gateway) |eth7 - e0|172.19.1.254|
 
 ## Task 2  - Recipe
 
@@ -61,8 +61,7 @@ set service dhcp-server shared-network-name LAN2_POOL subnet 172.19.0.0/23 name-
 commit
 ```
 
-To get DHCP confirmation
-VPCS's
+To get DHCP confirmation for VPCS's
 
 ```bash
 dhcp
