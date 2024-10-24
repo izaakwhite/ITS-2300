@@ -40,6 +40,10 @@ set protocols static route 0.0.0.0/0 next-hop 132.235.205.126
 set system name-server 132.235.9.75
 set system name-server 132.235.200.41
 
+set nat source rule 100 outbound-interface eth0
+set nat source rule 100 source address 192.168.64.0/18
+set nat source rule 100 translation address masquerade
+
 set interfaces ethernet eth4 address 192.168.67.254/22
 set interfaces ethernet eth4 description "Guest Wi-Fi Gateway"
 set service dhcp-server shared-network-name GUEST_WIFI_POOL subnet 192.168.64.0/22 range 0 start 192.168.64.10
