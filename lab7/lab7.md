@@ -128,6 +128,8 @@ sudo nmcli connection down "Wired connection 1"
 sudo nmcli connection up "Wired connection 1"
 
 dig www.its.ohio.edu
+
+nmcli
 ```
 
 ## Task 5
