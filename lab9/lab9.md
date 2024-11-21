@@ -1,6 +1,6 @@
-# Lab 8
+# Lab 9
 
-Lab 8 Bash and PreLab IP and Drawing
+Lab 9 Bash and PreLab IP and Drawing
 
 ## Ip Grid for (172.28.248.0/22)
 
