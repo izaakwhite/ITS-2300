@@ -1,5 +1,7 @@
 # Lab 10  
 
+![Network](lab10.png)
+
 ## IP GRID
 
 | Name                  | Interface         | Address/Mask         |
