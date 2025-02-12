@@ -56,7 +56,7 @@ commit
 
 Instructions for task 2
 
-### VyOS Configuration (VPCS)
+### VyOS Configuration (for VPCS)
 
 ```bash
 configure
@@ -80,7 +80,7 @@ ping 8.8.8.8
 
 ## Section 3
 
-### VyOS Configuration (Ubuntu GUI)
+### VyOS Configuration (for Ubuntu GUI)
 
 ```bash
 configure
